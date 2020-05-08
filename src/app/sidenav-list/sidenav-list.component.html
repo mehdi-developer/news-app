@@ -1,0 +1,20 @@
+<!-- 2 Buttons -->
+<button class="btn-sidenav" (click)="openAbout()">ABOUT</button>
+<button class="btn-sidenav" (click)="openRest()">REST API</button>
+
+<!-- NEWS SOURCES expansion button -->
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      NEWS SOURCES
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <!-- Each news source card -->
+  <mat-card *ngFor="let src of sources?.sources" (click)="srcClick(src.id)" routerLink="/source/{{src.id}}">
+    <!-- News source logo -->
+    <img src="../../assets/img/{{src.id}}.png">
+    <!-- news source name -->
+    <span class="ml-2">{{src.name}}</span>
+  </mat-card>
+
+</mat-expansion-panel>

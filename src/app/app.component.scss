@@ -1,0 +1,40 @@
+$mobile : 868px;
+
+
+// nav containers
+.container--nav {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 6%, rgba(247, 249, 255, 1) 51%, rgba(232, 237, 252, 1) 100%);
+  height: 70px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  &-tabs {
+    background: white;
+    width: 100%;
+    height: 45px;
+
+    @media (max-width:$mobile) {
+      position: fixed;
+      bottom: 0;
+      background: #e8edfc;
+      z-index: 999999999;
+    }
+  }
+}
+
+.line {
+  background: rgb(224, 224, 224);
+  width: 100%;
+  height: .7px;
+}
+
+
+
+// Sidenav
+
+mat-sidenav-content {
+  background: white;
+  height: 100vh;
+}

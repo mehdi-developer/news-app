@@ -1,0 +1,18 @@
+<div class="container mt-3">
+  <!-- Loading spinner before the get request is initialized and dom is loaded -->
+  <div *ngIf="!(article?.articles.length > 0)" class="text-center">
+    <img class="loading" src="../../assets/img/loading-gif.gif" alt="">
+  </div>
+  <!-- Error message -->
+  <div class="row text-center">
+    {{err | json}}
+  </div>
+  <!-- For loop for articles -->
+  <div *ngFor="let art of article?.articles" class="latest-article-wrapper">
+    <app-latest-article [article]="art"></app-latest-article>
+  </div>
+</div>
+<!-- No more news to show after all articles loaded -->
+<div *ngIf="article?.articles.length > 0" class="text-center text">
+  No more news to show
+</div>

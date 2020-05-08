@@ -1,0 +1,57 @@
+$fontcolor : rgb(0, 85, 124);
+$mobile : 868px;
+$smallmob : 355px;
+
+// Width for all nav tabs
+.mat-tab-links {
+  width: 100% !important;
+  z-index: 999999;
+}
+
+.mat-tab-link {
+  width: 50% !important;
+  transition: all .4s;
+
+  &:hover {
+    background: rgb(190, 223, 224);
+    text-decoration: none !important;
+  }
+
+  @media (max-width : $smallmob) {
+    width: 30% !important;
+    font-size: .7em;
+  }
+
+  color: $fontcolor !important;
+
+  &-active {
+    .mat-tab-label-content {
+      color: $fontcolor !important;
+    }
+  }
+}
+
+.mat-tab-header-pagination {
+  display: none !important;
+}
+
+.mat-ink-bar {
+  background: $fontcolor !important;
+
+  @media (max-width:$mobile) {
+    top: 0;
+  }
+}
+
+#mat-tab-label-0-1 {
+  @media (min-width:$mobile) {
+    display: none !important;
+  }
+}
+
+
+svg {
+  width: 23px;
+  height: 23px;
+  fill: $fontcolor;
+}

@@ -1,0 +1,26 @@
+<mat-sidenav-container>
+  <!-- Sidenav -->
+  <mat-sidenav fixedInViewport mode="over" position="start" #sidenav>
+    <!-- Sidenav content -->
+    <app-sidenav-list (close)="sidenav.close()"></app-sidenav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Header -->
+    <div class="container--nav">
+      <app-nav (menu)="sidenav.toggle()"></app-nav>
+    </div>
+    <!-- Header and tabs separator -->
+    <div class="line"></div>
+    <!-- The categories , search and latest tabs -->
+    <div class="container--nav-tabs">
+      <app-nav-tabs></app-nav-tabs>
+    </div>
+    <!-- Router wrapper for animation -->
+    <div [@a]="getState(o)" [@b]="getState(o)" [@c]="getState(o)" [@d]="getState(o)" [@e]="getState(o)"
+      [@f]="getState(o)" [@g]="getState(o)" class="router--wrapper">
+      <!-- Routes go here -->
+      <router-outlet #o="outlet"></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

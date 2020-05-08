@@ -1,0 +1,20 @@
+<div class="container mt-3">
+
+  <div class="d-flex justify-content-center mt-4">
+    <!-- Source Name -->
+    <h3><b>{{srcData?.articles[0].source.name}}</b></h3>
+  </div>
+  <!-- Loading spinner before the get request is initialized and dom is loaded -->
+  <div *ngIf="!(srcData?.articles.length > 0)" class="text-center">
+    <img class="loading" src="../../assets/img/loading-gif.gif">
+  </div>
+  <!-- For loop for articles -->
+  <div *ngFor="let art of srcData?.articles" class="latest-article-wrapper">
+    <app-latest-article [article]="art"></app-latest-article>
+  </div>
+
+</div>
+<!-- No more news to show after all articles loaded -->
+<div *ngIf="srcData?.articles.length > 0" class="text-center text">
+  No more news to show
+</div>

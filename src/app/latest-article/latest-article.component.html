@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+    <!-- Article img -->
+    <br>
+    <img onError="this.src='../assets/img/news-placeholder.png'" src="{{article.urlToImage}}" class="img-fluid w-100">
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+    <!-- Article title -->
+    <br>
+    <h4>{{article.title}}</h4>
+    <br>
+    <!-- Article description -->
+    {{article.description}}
+    <br>
+    <!-- Article url -->
+    <a class="btn btn-primary mt-3" href="{{article.url}}" target="_blank">Read More</a>
+  </div>
+</div>
+<br>
+<hr>

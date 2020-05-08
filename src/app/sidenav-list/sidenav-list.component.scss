@@ -1,0 +1,63 @@
+//Sidenav two buttons
+.btn-sidenav {
+  background: white !important;
+  color: black;
+  width: 100%;
+  outline: none !important;
+  padding: 10px 0;
+  font-weight: 400;
+  letter-spacing: 1px !important;
+  border: 0;
+  border-bottom: 1px solid gainsboro !important;
+  transition: all .4s !important;
+  text-align: left;
+  padding-left: 1.4em;
+
+  &:hover {
+    background: rgb(190, 223, 224) !important;
+  }
+}
+
+
+img {
+  border-radius: 10%;
+  width: 35px;
+  height: 35px;
+}
+
+
+//NEWS SOURCES expanded body
+.mat-expansion-panel-body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+//NEWS SOURCES each source card
+.mat-card {
+  border-radius: 0 !important;
+  cursor: pointer;
+  transition: all .4s !important;
+
+  &:hover {
+    background: rgb(190, 223, 224);
+  }
+}
+
+
+//NEWS SOURCES expandable button
+.mat-expansion-panel-header {
+
+
+  &:hover {
+    background: rgb(190, 223, 224) !important;
+  }
+
+  transition: all .4s !important;
+  font-weight: 500;
+  letter-spacing: 1px !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-family: 'Montserrat' !important;
+  border-radius: 0 !important;
+}

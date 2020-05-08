@@ -1,0 +1,35 @@
+$fontcolor: rgb(0, 85, 124);
+
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.source-name {
+  font-weight: bold;
+}
+
+.end-text {
+  margin-bottom: 4.5em;
+}
+
+.backlink {
+  cursor: pointer;
+
+  svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.up {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loading {
+  height: 100px;
+  width: 100px;
+}

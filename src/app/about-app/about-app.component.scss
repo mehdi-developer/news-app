@@ -1,0 +1,32 @@
+// Variables
+$red:#ff414b;
+$desktop : 650px;
+
+// Links 
+.links {
+  transition: all .3s;
+
+  &:hover {
+    border: none !important;
+    text-decoration: none !important;
+    color: $red !important;
+  }
+
+  &:focus {
+    border: none !important;
+    text-decoration: none !important;
+  }
+}
+
+// Link logos margin when its on a desktop size
+.link__text {
+  @media (min-width : $desktop) {
+    margin-left: 1em;
+  }
+}
+
+// Link Logo
+.link__logo {
+  width: 40px;
+  height: 40px;
+}
